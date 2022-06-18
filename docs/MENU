@@ -1,0 +1,26 @@
+MAIN
+    Home                [index.html]
+#   cheat sheet         [cheatsheet.html]
+#    download            [download.html]
+#    version/bug info    [revision.html]
+
+
+BLOG
+#    running jemdoc      [using.html]
+#    example page        [example.html]
+#    extra syntax        [extra.html]
+
+ABOUT
+     Contact             [contact.html]
+#configuration
+#    html changes        [htmlchanges.html]
+#    adding a menu       [menu.html]
+#    modelines           [modelines.html]
+
+#goodies
+#    vim, make           [stuff.html]
+#    latex equations     [latex.html]
+#    tables              [tables.html]
+
+
+# vim: et

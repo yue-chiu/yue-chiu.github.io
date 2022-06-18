@@ -1,0 +1,31 @@
+# jemdoc: menu{MENU}{index.html}, nofooter
+# jemdoc: title{HOME}
+= Yu Chao ( 于超 )
+
+== Profile
+ - Introduction: A CRUD developer
+ - Address: Hefei, Anhui
+ - Email: yuchao1741@foxmail.com
+
+== Education
+ - Bachelor's degree in Computer Science from Anhui University in 2021.
+
+== Experience
+ - One year of working experience.
+
+== Skills
+ - A little bit of JAVA
+ - A little bit of JS
+ - A little bit of Shell
+ - A little bit of SQL
+ - A little bit of Python
+
+== Frameworks
+ - A little bit of Spring ecosystem
+ - A little bit of SpringCloud ecosystem
+ - A little bit of VUE
+
+== DevOps
+ - A little bit of Docker
+ - A little bit of k8s
+ - A little bit of Jenkins
