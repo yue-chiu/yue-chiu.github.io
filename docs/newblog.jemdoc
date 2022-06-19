@@ -1,0 +1,25 @@
+# jemdoc: menu{MENU}{newblog.html}, nofooter
+# jemdoc: title{Personal Site}
+= jemdoc语法
+
+== 基本语法
+- /\/斜体\//
+- *\*粗体\**
+- +\+monospace\++
+- +\-+ is a hyphen (-)
+- +\-\-+ is an en-dash (--)
+- +\-\-\-+ is an em-dash (---)
+- +\.\.\.+ is an ellipsis (...)
+- +\~+ is a non-breaking space (~)
+- +\#+ begins a comment, for the remainder of the line
+- +\\C+ is \C
+- +\\R+ is \R
+- +\\M+ is \M
+- `singly quoted text' is written +\`singly quoted text\'+
+- "doubly quoted text" is written +\"doubly quoted text\"+
+- jemdoc's apostrophes are converted automatically from +jemdoc\'s+ input
+- the sequence +\\n+ \n forces a manual line break
+- paragraphs are separated by blank lines
+- +\$inline LaTeX equation\$+
+- +\\( LaTeX equation on its own line \\)+
+- +\#+s (and only +\#+s) must be quoted in URLs

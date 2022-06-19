@@ -138,7 +138,7 @@ def standardconf():
   <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
   <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta http-equiv="Content-Type" content="text/html;charset=gbk" />
   
   [defaultcss]
   <link rel="stylesheet" href="jemdoc.css" type="text/css" />
@@ -285,7 +285,7 @@ def raisejandal(msg, line=0):
   raise JandalError(s)
 
 def readnoncomment(f):
-  l = f.readline().decode('utf-8')
+  l = f.readline().decode('gbk')
   if l == '':
     return l
   elif l[0] == '#': # jem: be a little more generous with the comments we accept?
@@ -297,7 +297,7 @@ def parseconf(cns):
   syntax = {}
   warn = False # jem. make configurable?
   # manually add the defaults as a file handle.
-  fs = [io.BytesIO(standardconf().encode('utf-8'))]
+  fs = [io.BytesIO(standardconf().encode('gbk'))]
   for sname in cns:
     fs.append(io.open(sname, 'rb'))
 
@@ -375,7 +375,7 @@ def insertmenuitems(f, mname, current, prefix):
 def out(f, s):
 #  print(type(s))
   if sys.version_info[0] == 2 and type(s) is StringType:
-    f.write(s.decode('utf-8'))
+    f.write(s.decode('gbk'))
   else:
     f.write(s)
 
@@ -470,7 +470,7 @@ def doincludes(f, l):
   l = l.rstrip()
   if l.startswith(ir):
     nf = io.open(l[len(ir):-1], 'rb')
-    f.outf.write(nf.read().decode('utf-8'))
+    f.outf.write(nf.read().decode('gbk'))
     nf.close()
   elif l.startswith(i):
     f.pushfile(l[len(i):-1])
@@ -481,7 +481,7 @@ def doincludes(f, l):
 
 def nl(f, withcount=False, codemode=False):
   """Get input file line."""
-  s = f.inf.readline().decode('utf-8')
+  s = f.inf.readline().decode('gbk')
   if not s and f.otherfiles:
     f.nextfile()
     return nl(f, withcount, codemode)
@@ -1262,7 +1262,7 @@ def procfile(f):
   js = []
   title = None
   while pc(f, False) == '#':
-    l = f.inf.readline().decode('utf-8')
+    l = f.inf.readline().decode('gbk')
     f.linenum += 1
     if doincludes(f, l[1:]):
       continue

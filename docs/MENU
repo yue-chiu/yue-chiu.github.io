@@ -1,17 +1,17 @@
 MAIN
     Home                [index.html]
+    Contact             [contact.html]
+
+BLOG
+    пбндуб               [newblog.html]
+
 #   cheat sheet         [cheatsheet.html]
 #    download            [download.html]
 #    version/bug info    [revision.html]
-
-
-BLOG
 #    running jemdoc      [using.html]
 #    example page        [example.html]
 #    extra syntax        [extra.html]
-
-ABOUT
-     Contact             [contact.html]
+#ABOUT
 #configuration
 #    html changes        [htmlchanges.html]
 #    adding a menu       [menu.html]
